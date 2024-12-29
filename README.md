@@ -1,6 +1,6 @@
 # CS50's Course Search with Dark Mode
 
-#### Video Demo: [URL HERE](https://www.youtube.com/watch?v=your-video-id)
+#### Video Demo: [URL HERE](https://youtu.be/cQSo4UKdkZ8)
 
 #### Description:
 
