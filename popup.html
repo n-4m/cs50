@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        color: #000000;
+        transition: background-color 0.3s, color 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #00745d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      button:hover {
+        background-color: #004336;
+      }
+
+      .icon {
+        font-size: 18px;
+      }
+
+      .dark-mode button {
+        background-color: #bb86fc;
+      }
+
+      .dark-mode button:hover {
+        background-color: #9b51e0;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: calc(100% - 22px);
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-group label {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #555;
+      }
+      .group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .group input {
+        flex: 1; /* Để input chiếm không gian còn lại */
+        padding: 8px;
+        font-size: 14px;
+      }
+
+      .group button {
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .group h2 {
+        font-size: 18px;
+        margin: 0;
+        white-space: nowrap; /* Đảm bảo tiêu đề không xuống dòng */
+      }
+
+      #darkModeSection {
+        align-items: center;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section group" id="darkModeSection">
+      <h2>Dark Mode</h2>
+      <button id="toggleDarkMode">
+        <span class="icon">🌙</span>
+      </button>
+    </div>
+    <hr />
+    <h2>CS50's Courses Search</h2>
+    <div class="section group">
+      <input type="text" id="searchQuery" placeholder="Search CS50..." />
+      <button id="searchCS50">Search</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
